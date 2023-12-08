@@ -7,4 +7,9 @@
 #HOST-SUFFIX,weibocdn.com,Weibo
 #HOST-KEYWORD,weibo,Weibo
 
-HOST-SUFFIX,api.weibo.cn, Location IP
+HOST,api.weibo.cn
+HOST,api.weibo.com
+HOST-SUFFIX,weibo.cn
+HOST-SUFFIX,weibo.com
+HOST-SUFFIX,weibocdn.com
+HOST-KEYWORD,weibo
