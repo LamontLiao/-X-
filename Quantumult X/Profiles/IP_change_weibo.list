@@ -1,0 +1,10 @@
+#修改微博的IP地址
+
+
+
+#HOST-SUFFIX,weibo.cn,Weibo
+#HOST-SUFFIX,weibo.com,Weibo
+#HOST-SUFFIX,weibocdn.com,Weibo
+#HOST-KEYWORD,weibo,Weibo
+
+HOST-SUFFIX,api.weibo.cn, Location IP
