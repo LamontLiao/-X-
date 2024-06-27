@@ -1,8 +1,7 @@
-hostname = -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net, app.bilibili.com, api.live.bilibili.com, *.bilibili.com, *.bili*.*, *.bilibili.*, grpc.biliapi.net,*biliapi.net
-# ======= BiliJson 开屏及隐私 ======= #
-# ～ BiliBili_哔哩哔哩_屏蔽IP请求@ddgksf2013
-^https?:\/\/app\.bilibili\.com\/x\/resource\/ip url reject
-# ～ BiliBili_哔哩哔哩_应用开屏去广告@bm7
-^https://app.bilibili.com/x/v2/splash/show url reject-dict
-# ～ BiliBili_哔哩哔哩_应用开屏广告预加载@yjqiang
-^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/list url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js
+# 开屏广告 //app.bilibili.com
+^http:\/\/[\d\.]+:8000\/v1\/resource\/\w{32}-1-SPLASH url reject-dict
+^http:\/\/upos-sz-static\.bilivideo\.com\/ssaxcode\/\w{2}\/\w{2}\/\w{32}-1-SPLASH url reject-dict
+^https:\/\/(api\.bilibili\.com\/x\/mengqi\/v1\/resource|app\.bilibili\.com\/x\/resource\/peak\/download)\? url reject-dict
+^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/(brand\/list|event\/list2|list|show)\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/bilibili/json.js
+
+hostname = app.bilibili.com, api.bilibili.com, api.live.bilibili.com, grpc.biliapi.net
