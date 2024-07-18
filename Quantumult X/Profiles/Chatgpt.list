@@ -42,6 +42,8 @@ HOST-SUFFIX,stripe.com,OpenAI
 HOST-SUFFIX,turn.livekit.cloud,OpenAI
 HOST-SUFFIX,host.livekit.cloud,OpenAI
 HOST-SUFFIX,webrtc.chatgpt.com,OpenAI
+HOST,ios.chat.openai.com,OpenAI
+HOST,ab.chatgpt.com,OpenAI
 HOST-KEYWORD,openai,OpenAI
 HOST-KEYWORD,livekit,OpenAI
 IP-CIDR,24.199.123.28/32,OpenAI
